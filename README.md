@@ -1,4 +1,6 @@
 # Project2020 - 최준형
+## 04월 30일 테이블 연습
+> table tag 연습<br>
 ## 04월 24일 멀티미디어 태그 연습2
 > audio tag 연습<br>
 > video tag 연습 <br>

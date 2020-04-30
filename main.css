@@ -165,30 +165,3 @@ td{
 caption{
     caption-side: bottom;
 }
-
-.grid-container{
-    background-color: rgb(207, 42, 42);
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
-.item1 { 
-    grid-column: 1/ span 3;
-    grid-row: 1;
-}
-
-
-.grid-item{
-    background-color: rgb(255, 255, 255);
-    font-size: 30px;
-    padding: 20px;
-    text-align: center;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-
-.font{
-    font-family: 'Nanum Pen Script', cursive;
-}
