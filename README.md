@@ -1,4 +1,7 @@
 # Project2020 - 최준형
+## 05월 08일 풀스크린 백그라운드, 고스트 버튼 연습
+> Full Screen-BG 연습<br>
+> Ghost Button 연습<br>
 ## 05월 08일 그리드,폰트변경, gitflow 연습
 > 그리드 연습<br>
 > 폰트 변경 연습<br>
