@@ -1,6 +1,6 @@
 <!--
-    *File Name : index.thml v0.5.0
-    *update: 2020.04.24
+    *File Name : index.thml v0.6.0
+    *update: 2020.05.08
     *Author:developern
 -->
 <!DOCTYPE html>
@@ -13,16 +13,17 @@
     <link rel="stylesheet" href="./vendor/normalize.css">
     <!--CSS의 외부적용방식-->
     <link rel="stylesheet" href="main.css">
+    
    
 </head>
 <body>
     <header>최준형의 홈페이지</header>
     <nav>
         <ul>
-            <li class="logo">최준형</li>
-            <li><a href="#">메뉴1</a></li>
-            <li><a href="#">메뉴2</a></li>
-            <li><a href="#">메뉴3</a></li>
+            <li class="logo" class="font">최준형</li>
+            <li><a href="#" class="font">메뉴1</a></li>
+            <li><a href="#" class="font">메뉴2</a></li>
+            <li><a href="#" class="font">메뉴3</a></li>
         </ul>
     </nav>
     <article class="article-bg1">
@@ -61,7 +62,7 @@
                     현재 브라우저에서는 오디오 태그를 지원하지 않습니다.
             </audio>
         </section>
-        
+
         <section>
             <video width="350px" height="250px" controls>
                 <source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4">
@@ -76,6 +77,66 @@
             <iframe width="350" height="250" src="https://www.youtube.com/embed/vfG7mWwphz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="350" height="250" src="https://www.youtube.com/embed/sXhsePfNcSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+    </article>
+
+    <article class="article-bg5">
+        <h1>4월30일 테이블 연습</h1>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="4">테이블 연습</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">thead 태그 영역</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">줄합치기</td>
+                        <td colspan="3">칸합치기</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="4">tfoot태그 영역</td>
+                </tfoot>
+            </table>
+        </section>
+    </article>
+    <article>
+        <section class="sec-title">
+            <h2>5월 8일 : grid 연습</h2>
+        </section>
+        <section class="sec-left">left section</section>
+        <section class="sec-right">right section</section>
+    </article>
+    </article>
+    <article class="grid-container">
+        <div class="grid-item item1">5월 8일 : CSS Grid</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item item10">10</div>
     </article>
     <aside>어사이드 영역</aside>
     <footer>여기는 바닦 영역</footer>
