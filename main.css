@@ -335,3 +335,7 @@ li ul {
 li:hover ul{
     display:block;
 }
+li ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
