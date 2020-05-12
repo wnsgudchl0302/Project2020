@@ -8,9 +8,10 @@
 
 .logo{
     color: rgb(159, 185, 255);
-    font-size:  20px;
+    font-size:  25px;
     font-weight: bold;
     text-decoration: none;
+    padding: 3px 20px;
 }
 /* header full screen background */
 .full-bg{
@@ -85,7 +86,8 @@ ul{
 
 ul li{
     float: left;
-    margin-right: 50px;
+    margin-right: 100px;
+    margin-top: -5px;
  
 }
 
@@ -310,20 +312,20 @@ footer {
   }
 
   /* 메뉴 드롭박스 항목*/
-ul li a {
+li ul li a {
     color: rgb(255, 255, 255);
     display:block;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    margin:0px;
-    padding:0px 25px;
+    margin:10px 0px;
+    padding:0px 15px;
     text-decoration: none;
 }
 li ul {
     background: rgb(0, 0, 0);
     display:none;
-    height:auto;
-    padding:0px;
+    height: auto;
+    padding-top:15px;
     margin:0px;
     border:0px;
     position:absolute;
