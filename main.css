@@ -20,7 +20,17 @@
     width: 100%;
     display: table;
     background-color: initial;
-}/*ghost button*/
+}
+/* 메뉴바 상단 고정 */
+.header {  
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+  }
+
+
+/*ghost button*/
 
 .container{
     display: table-cell;
@@ -69,13 +79,14 @@ ul{
     height: 30px;
     margin: 0;
     padding: 15px 10px 8px;
-    background: rgb(49, 49, 49);
+    background: rgb(8, 8, 8);
     list-style: none;
 }
 
 ul li{
     float: left;
-    margin-right: 10px;
+    margin-right: 50px;
+ 
 }
 
 ul li a{
@@ -84,6 +95,8 @@ ul li a{
     font-weight: bold;
     text-decoration: none;
     font-family: 'Nanum';
+    margin: auto;
+    
 }
 
 /* article background */
@@ -283,5 +296,40 @@ caption{
 @font-face{
     font-family: 'Nanum';
     src: url("./font/NanumPenScript-Regular.ttf");
+    
 }
+/*푸터만들기*/
+footer { 
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    
+  }
 
+  /* 메뉴 드롭박스 항목*/
+ul li a {
+    color: rgb(255, 255, 255);
+    display:block;
+    font-size: 30px;
+    font-weight: bold;
+    margin:0px;
+    padding:0px 25px;
+    text-decoration: none;
+}
+li ul {
+    background: rgb(0, 0, 0);
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:250px;
+    z-index:200;
+}
+li:hover ul{
+    display:block;
+}

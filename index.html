@@ -17,6 +17,26 @@
    
 </head>
 <body>
+    <nav class="header">
+        <ul>
+            <li class="logo" class="font">최준형</li>
+            <li><a href="#" class="font">메뉴1</a>
+                <ul class="li">
+                    <li><a href="#box">박스모델연습</a></li>
+                    <li><a href="#img">멀티미디어 태그</a></li>
+                    <li><a href="#audio">Audio, Video</a></li>
+                    <li><a href="#youtube">유튜브 동영상</a></li>
+                    <li><a href="#table">테이블연습</a></li>
+                    <li><a href="#grid">grid연습</a></li>
+                    <li><a href="#cssgrid">css그리드</a></li>
+                    <li><a href="#footer">푸터</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#" class="font">메뉴2</a></li>
+            <li><a href="#" class="font">메뉴3</a></li>
+        </ul>
+    </nav>
     <header class="full-bg">
         <div class="container">
             <div class="header-title">
@@ -29,15 +49,8 @@
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li class="logo" class="font">최준형</li>
-            <li><a href="#" class="font">메뉴1</a></li>
-            <li><a href="#" class="font">메뉴2</a></li>
-            <li><a href="#" class="font">메뉴3</a></li>
-        </ul>
-    </nav>
-    <article class="article-bg1">
+    
+    <article class="article-bg1" id="box">
         <h1>4월 10일 박스모델연습</h1>
        <section>
         <div class="box1">박스1</div>
@@ -45,7 +58,7 @@
         <div class="box3">박스3</div>
        </section>
     </article>
-    <article class="article-bg2">
+    <article class="article-bg2" id="img">
         <h1>4월23일 멀티미디어 태그 연습</h1>
         <h2>img tag 연습</h2>
         <section>
@@ -64,7 +77,7 @@
         </section>
         <section>세번째 섹션</section>
     </article>
-    <article class="article-bg3">
+    <article class="article-bg3" id="audio">
         <h1>4월24일 멀티미디어 태그 연습</h1>
         <h2>audio, video tag 연습</h2>
         <section>
@@ -81,7 +94,7 @@
             </video>
         </section>
     </article>
-    <article class="article-bg4">
+    <article class="article-bg4" id="youtube">
         <h2>유튜브 동영상 삽입 연습</h2>
         <section>
             <iframe width="350" height="250" src="https://www.youtube.com/embed/FHVmFt4amcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,7 +103,7 @@
         </section>
     </article>
 
-    <article class="article-bg5">
+    <article class="article-bg5" id="table">
         <h1>4월30일 테이블 연습</h1>
         <section>
             <table>
@@ -129,14 +142,14 @@
             </table>
         </section>
     </article>
-    <article>
+    <article id="grid">
         <section class="sec-title">
             <h2>5월 8일 : grid 연습</h2>
         </section>
         <section class="sec-left">left section</section>
         <section class="sec-right">right section</section>
     </article>
-    </article>
+    </article id="cssgrid">
     <article class="grid-container">
         <div class="grid-item item1">5월 8일 : CSS Grid</div>
         <div class="grid-item item2">2</div>
@@ -149,7 +162,8 @@
         <div class="grid-item">9</div>
         <div class="grid-item item10">10</div>
     </article>
-    <aside>어사이드 영역</aside>
-    <footer>여기는 바닦 영역</footer>
+    <footer class="footer" id="footer">
+        <p>Copyright © 2020 Choi Jun Hyeong </p>
+    </footer>
 </body>
 </html>
