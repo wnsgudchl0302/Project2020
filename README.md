@@ -1,4 +1,8 @@
 # Project2020 - 최준형
+## 05월 12일 메뉴 상단 고정, 드롭박스추가, 푸터 추가
+> Menu Bar 상단고정연습<br>
+> Menu dropbox연습<br>
+> Footer 연습<br>
 ## 05월 08일 풀스크린 백그라운드, 고스트 버튼 연습
 > Full Screen-BG 연습<br>
 > Ghost Button 연습<br>
