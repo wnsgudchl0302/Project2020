@@ -30,28 +30,34 @@
 
 <body>
   <!-- Image and text -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand" href="#">
-      <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
-        class="d-inline-block align-top" alt="" loading="lazy">
-      Bootstrap
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#Alert">Alert연습</a>
+          <a class="nav-link" href="#Alert">Alert</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#btn">Button연습</a>
+          <a class="nav-link" href="#btn">Button</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#collapse">Collaspe연습</a>
+          <a class="nav-link" href="#collapse">Collapse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#form">Form연습</a>
+          <a class="nav-link" href=#form>Form</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#modal">Modal연습</a>
+          <a class="nav-link" href="#modal">Modal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#progress">Progress</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tooltips">Tooltips</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
@@ -295,29 +301,66 @@
     </section>
     <br>
   </article>
-  <article id="grid">
-    <section class="sec-title">
-      <h2>5월 8일 : grid 연습</h2>
+  <article class="article-bg6" id="progress">
+    <h1 class="white">Progress 연습</h1>
+    <section>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+          aria-valuemin="0" aria-valuemax="100">10%</div>
+      </div>
+      <br>
+      <div class="progress" style="height: 12px;">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+      <br>
+      <div class="progress" style="height: 25px; font-size: large;">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+          aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+      <br>
+      <div class="progress" style="height: 37px;">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div>
+      <br>
+      <div class="progress" style="height: 50px;">
+        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
     </section>
-    <section class="sec-left">left section</section>
-    <section class="sec-right">right section</section>
+    <br>
   </article>
-  </article id="cssgrid">
-  <article class="grid-container">
-    <div class="grid-item item1">5월 8일 : CSS Grid</div>
-    <div class="grid-item item2">2</div>
-    <div class="grid-item item3">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>
-    <div class="grid-item item10">10</div>
+  <article class="article-bg3" id="tooltips">
+    <h1 class="white">Tooltips 연습</h1>
+    <section>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+        title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+        title="Tooltip on left">
+        Tooltip on left
+      </button>
+    </section>
+    <br>
   </article>
+
   <footer class="footer" id="footer">
     <p>Copyright © 2020 Choi Jun Hyeong </p>
   </footer>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>
