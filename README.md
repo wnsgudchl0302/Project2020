@@ -2,6 +2,7 @@
 ## 05월 19일 BootStrap연습
 > Progress 연습<br>
 > Tooltips 연습<br>
+> ICON 연습<br>
 ## 05월 19일 BootStrap연습
 > Nav var 연습<br>
 > Alert 연습<br>
