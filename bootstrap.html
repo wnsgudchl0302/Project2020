@@ -1,0 +1,323 @@
+<!--
+    *File Name : bootstrap.html v0.0.0
+    *update: 2020.05.19
+    *Author:developern
+-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <!--CSS초기화 normalize.css-->
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <!--CSS의 외부적용방식-->
+  <link rel="stylesheet" href="main.css">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="vendor/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+        class="d-inline-block align-top" alt="" loading="lazy">
+      Bootstrap
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#Alert">Alert연습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#btn">Button연습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#collapse">Collaspe연습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form">Form연습</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#modal">Modal연습</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/cook1.jpg" style="height: 450px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/cook2.jpg" style="height: 450px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/cook3.jpg" style="height: 450px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </header>
+  <article class="article-bg1" id="Alert">
+    <h1>Alert 연습</h1>
+    <section>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div>
+    </section>
+  </article>
+  <article class="article-bg2" id="btn">
+    <h1>Button연습</h1>
+
+    <section>
+      <button type="button" class="btn btn-primary btn-lg">Primary</button>
+      <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-link">Link</button>
+    </section>
+    <br>
+    <section>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+      <br><br>
+      <button type="button" class="btn btn-warning btn-lg btn-block">Block level button</button>
+    </section>
+    <br>
+    <section>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+      </div>
+    </section>
+  </article>
+  <article class="article-bg3" id="collapse">
+    <h1>Collapse-Accordion 연습(FAQ에서 사용)</h1>
+    <br>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Collapsible Group Item #2
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+  </article>
+  <article class="article-bg4" id="form">
+    <h1>Form연습</h1>
+    <section>
+      <form class="width-50">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </article>
+
+  <article class="article-bg5" id="modal">
+    <h1>Modal연습</h1>
+    <section>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+  </article>
+  <article id="grid">
+    <section class="sec-title">
+      <h2>5월 8일 : grid 연습</h2>
+    </section>
+    <section class="sec-left">left section</section>
+    <section class="sec-right">right section</section>
+  </article>
+  </article id="cssgrid">
+  <article class="grid-container">
+    <div class="grid-item item1">5월 8일 : CSS Grid</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item item10">10</div>
+  </article>
+  <footer class="footer" id="footer">
+    <p>Copyright © 2020 Choi Jun Hyeong </p>
+  </footer>
+</body>
+
+</html>

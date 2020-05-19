@@ -1,10 +1,11 @@
 <!--
-    *File Name : index.thml v0.8.0
+    *File Name : index.html v0.8.0
     *update: 2020.05.12
     *Author:developern
 -->
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,28 +14,29 @@
     <link rel="stylesheet" href="./vendor/normalize.css">
     <!--CSS의 외부적용방식-->
     <link rel="stylesheet" href="main.css">
-    
-   
+
+
 </head>
+
 <body>
     <nav class="header">
-        <ul>
-            <li class="logo" class="font">최준형</li>
-            <li><a href="#" class="font">One page Menu</a>
-                <ul>
-                    <li><a href="#box">박스모델연습</a></li>
-                    <li><a href="#img">멀티미디어 태그</a></li>
-                    <li><a href="#audio">Audio, Video</a></li>
-                    <li><a href="#youtube">유튜브 동영상</a></li>
-                    <li><a href="#table">테이블연습</a></li>
-                    <li><a href="#grid">grid연습</a></li>
-                    <li><a href="#cssgrid">css그리드</a></li>
-                    <li><a href="#footer">푸터</a></li>
+        <ul class="ul">
+            <li class="logo ul-li" class="font">최준형</li>
+            <li class="ul-li"><a href="#" class="font ul-li-a ">One page Menu</a>
+                <ul class="ul li-ul">
+                    <li class="ul-li"><a href="#box" class="ul-li-a li-ul-li-a">박스모델연습</a></li>
+                    <li class="ul-li"><a href="#img" class="ul-li-a li-ul-li-a">멀티미디어 태그</a></li>
+                    <li class="ul-li"><a href="#audio" class="ul-li-a li-ul-li-a">Audio, Video</a></li>
+                    <li class="ul-li"><a href="#youtube" class="ul-li-a li-ul-li-a">유튜브 동영상</a></li>
+                    <li class="ul-li"><a href="#table" class="ul-li-a li-ul-li-a">테이블연습</a></li>
+                    <li class="ul-li"><a href="#grid" class="ul-li-a li-ul-li-a">grid연습</a></li>
+                    <li class="ul-li"><a href="#cssgrid" class="ul-li-a li-ul-li-a">css그리드</a></li>
+                    <li class="ul-li"><a href="#footer" class="ul-li-a li-ul-li-a">푸터</a></li>
                 </ul>
             </li>
-            
-            <li><a href="./bootstrap-test.html" class="font">Bootstrap</a></li>
-            <li><a href="#" class="font">메뉴3</a></li>
+
+            <li class="ul-li"><a href="./bootstrap.html" class="font ul-li-a">Bootstrap</a></li>
+            <li class="ul-li"><a href="#" class="font ul-li-a">메뉴3</a></li>
         </ul>
     </nav>
     <header class="full-bg">
@@ -49,14 +51,14 @@
             </div>
         </div>
     </header>
-    
+
     <article class="article-bg1" id="box">
         <h1>4월 10일 박스모델연습</h1>
-       <section>
-        <div class="box1">박스1</div>
-        <div class="box2">박스2</div>
-        <div class="box3">박스3</div>
-       </section>
+        <section>
+            <div class="box1">박스1</div>
+            <div class="box2">박스2</div>
+            <div class="box3">박스3</div>
+        </section>
     </article>
     <article class="article-bg2" id="img">
         <h1>4월23일 멀티미디어 태그 연습</h1>
@@ -83,23 +85,29 @@
         <section>
             <audio controls>
                 <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3">
-                    현재 브라우저에서는 오디오 태그를 지원하지 않습니다.
+                현재 브라우저에서는 오디오 태그를 지원하지 않습니다.
             </audio>
         </section>
 
         <section>
             <video width="350px" height="250px" controls>
                 <source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4">
-                    현재 브라우저에서는 비디오 태그를 지원하지 않습니다.
+                현재 브라우저에서는 비디오 태그를 지원하지 않습니다.
             </video>
         </section>
     </article>
     <article class="article-bg4" id="youtube">
         <h2>유튜브 동영상 삽입 연습</h2>
         <section>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/FHVmFt4amcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/vfG7mWwphz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/sXhsePfNcSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/FHVmFt4amcA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/vfG7mWwphz0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/sXhsePfNcSc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
     </article>
 
@@ -166,4 +174,5 @@
         <p>Copyright © 2020 Choi Jun Hyeong </p>
     </footer>
 </body>
+
 </html>

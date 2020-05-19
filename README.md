@@ -1,4 +1,11 @@
 # Project2020 - 최준형
+## 05월 19일 BootStrap연습
+> Nav var 연습<br>
+> Alert 연습<br>
+> Button 연습<br>
+> Collaspe 연습<br>
+> Form 연습<br>
+> Modal 연습<br>
 ## 05월 12일 메뉴 상단 고정, 드롭박스추가, 푸터 추가
 > Menu Bar 상단고정연습<br>
 > Menu dropbox연습<br>
