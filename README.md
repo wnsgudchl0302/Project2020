@@ -1,5 +1,5 @@
 # Project2020 - 최준형
-## 05월 19일 BootStrap연습2
+## 05월 21일 BootStrap연습2
 > Progress 연습<br>
 > Tooltips 연습<br>
 > ICON 연습<br>
