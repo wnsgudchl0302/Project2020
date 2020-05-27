@@ -1,4 +1,14 @@
 # Project2020 - 최준형
+## 05월 27일 DOM연습
+> document.querySelector()연습<br>
+> document.getElementById()연습<br>
+> document.querySelectorAll()연습<br>
+> SPA와 h1~h6 자동 생성 연습<br>
+> SPA로 rgb그라데이션 연습<br>
+> Placehold.com을 이용한 이미지 연습<br>
+> setAttribute(), getAttribute()연습<br>
+> Date를 이용한 실시간 시간 표시하기 연습<br>
+> button에 이벤트 연결 연습<br>
 ## 05월 21일 BootStrap연습2
 > Progress 연습<br>
 > Tooltips 연습<br>

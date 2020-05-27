@@ -1,6 +1,6 @@
 /*
 *File Name : index.html v0.10.0
-*update: 2020.05.21
+*update: 2020.05.27
 *Author:developern
 */
 
@@ -118,7 +118,7 @@
     margin:0px;
     border:0px;
     position:absolute;
-    width:250px;
+    width:320px;
     z-index:200;
 }
 li:hover ul{

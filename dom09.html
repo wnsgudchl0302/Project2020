@@ -1,0 +1,33 @@
+<!--
+    *File Name : 
+    *update: 2020.05.26
+    *Author:developern
+-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dom08</title>
+    <script>
+        window.onload = function () {
+            document.getElementById('button').onclick = function () {
+                this.textContent = this.textContent + '★';
+            }
+        };
+        function buttonClick() {
+            alert('클릭 되었습니다.');
+        };
+
+
+    </script>
+</head>
+
+<body>
+    <button onclick="buttonClick()">버튼 클릭</button>
+    <button id="button">별추가 버튼</button>
+</body>
+
+</html>
